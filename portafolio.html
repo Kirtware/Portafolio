@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portafolio de Kirtos</title>
+    <style>
+        body {
+            background-color: #111827;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: cyan;
+            font-size: 50px;
+        }
+        p {
+            font-size: 20px;
+        }
+        img {
+            width: 150px;
+            border-radius:50%;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: #1f2937;
+            padding:20px;
+            margin: 20px;
+            border-radius: 10px;
+
+            animation: aparecer 2s;
+        }
+
+        button {
+            background-color: cyan;
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: white;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }        
+        </style>
+</head>
+
+<body>
+    <img src="https://i.imgur.com/4M34hi2.png">
+    <h1>Kirtos</h1>
+    <p>Desarrollador Fullstack en formación</p>
+
+    <div class="card">
+        <h2>Proyecto 1</h2>
+        <p>Mi primera pagina web</p>
+        <button>Ver proyecto</button>
+    </div>
+
+    <div class="card">
+        <h2>Contactos </h2>
+        <p> Email: kirtos@email.com </p>
+        <button>Contactar</button>
+    </div>
+    <div class="card">
+        <h2>Redes</h2>
+        <a href="https://github.com">
+            <button> Mi GitHub </button>
+        </a>
+
+    </div>
+
+</body>
+
+</html>
