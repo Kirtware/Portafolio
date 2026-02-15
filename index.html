@@ -2,25 +2,35 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Mi Portafolio</title>
+<title>Portafolio Kirtos</title>
 
 <style>
 
 body{
+
 font-family: Arial;
-background: linear-gradient(120deg,#1a1a1a,#000);
+background: linear-gradient(120deg,#0f0f0f,#000);
 color:white;
 text-align:center;
+
+}
+
+header{
+
 margin-top:100px;
+
 }
 
 h1{
+
 font-size:50px;
+
 }
 
 p{
-font-size:20px;
+
 color:gray;
+
 }
 
 button{
@@ -40,21 +50,120 @@ transform:scale(1.1);
 
 }
 
+/* PROYECTOS */
+
+#proyectos{
+
+margin-top:200px;
+
+}
+
+.card{
+
+background:#111;
+padding:20px;
+margin:20px auto;
+width:300px;
+border-radius:10px;
+transition:0.3s;
+
+}
+
+.card:hover{
+
+transform:scale(1.05);
+
+}
+
+img{
+
+width:100%;
+border-radius:10px;
+
+}
+
 </style>
 
 </head>
 
 <body>
 
+
+<header>
+
 <h1>Hola, soy Kirtos</h1>
 
-<p>Futuro Fullstack Developer</p>
+<p>Fullstack Developer en progreso</p>
 
-<button onclick="alert('Bienvenido a mi portafolio')">
+<button onclick="mostrar()">
 
 Ver proyectos
 
 </button>
+
+</header>
+
+
+<section id="proyectos" style="display:none;">
+
+
+<h2>Mis proyectos</h2>
+
+
+<div class="card">
+
+<img src="https://picsum.photos/300/200">
+
+<h3>Proyecto 1</h3>
+
+<p>Página web moderna</p>
+
+<button>
+
+Ver
+
+</button>
+
+</div>
+
+
+<div class="card">
+
+<img src="https://picsum.photos/300/201">
+
+<h3>Proyecto 2</h3>
+
+<p>Sistema web</p>
+
+<button>
+
+Ver
+
+</button>
+
+</div>
+
+
+</section>
+
+
+<script>
+
+function mostrar(){
+
+document.getElementById("proyectos").style.display="block";
+
+window.scrollTo({
+
+top:600,
+behavior:"smooth"
+
+});
+
+}
+
+</script>
+
 
 </body>
 
